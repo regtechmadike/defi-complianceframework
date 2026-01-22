@@ -1,0 +1,31 @@
+Category,Checkpoint,Evidence_Required,Assessment,Score_Contribution,Dimension_Max,Risk_Impact,Recommended_Mitigation,Notes/Status
+Decentralization,No admin keys or owner privileges,Contract code (e.g., no owner() function or renounced),,5,20,High,N/A – core immutability requirement
+Decentralization,Decentralized governance (token voting / DAO),Governance contract & proposal history,,5,20,High,Implement or strengthen DAO mechanisms
+Decentralization,No single point of control (oracles, sequencers, etc.),Dependency audit / architecture diagram,,5,20,High,Distribute infrastructure (multiple nodes, decentralized oracles)
+Decentralization,Open-source code & public auditability,GitHub repo + audit reports (e.g., PeckShield, Trail of Bits),,3,20,Medium,Publish full code + encourage community audits
+Decentralization,Multiple independent frontends / no central UI dependency,List of alternative interfaces,,2,20,Medium,Support / promote community frontends
+Transaction_Monitoring,Sanctions screening implemented (OFAC/UN/EU),Oracle integration or frontend check logs,,5,20,High,Integrate Chainlink/Refinitiv sanctions oracle
+Transaction_Monitoring,AML/CFT transaction monitoring,Suspicious activity detection logic / alerts,,5,20,High,Add on-chain anomaly rules (e.g., velocity checks)
+Transaction_Monitoring,Blockchain analytics partnership (Chainalysis/Elliptic/etc.),Partnership docs or API calls in code,,4,20,High,Subscribe to analytics feed for wallet risk scoring
+Transaction_Monitoring,Risk scoring for wallets / addresses,Wallet risk function or external call,,3,20,High,Implement real-time scoring (e.g., 0-100 scale)
+Transaction_Monitoring,Geo-blocking sanctioned / high-risk countries,Frontend IP restriction or ToS enforcement proof,,3,20,High,Add Cloudflare GeoIP or similar
+User_Identification,KYC process for users (optional tier),Credential verification flow (e.g., Civic, Persona),,4,15,High,Introduce optional KYC for high-value pools
+User_Identification,Customer due diligence (risk-based),Risk scoring policy document,,4,15,High,Apply tiered CDD based on wallet activity
+User_Identification,Enhanced due diligence for high-risk users (PEP screening),PEP/adverse media check integration,,3,15,High,Integrate World-Check or similar via oracle
+User_Identification,Wallet address verification / identity attestation,ZK-proof or attestation contract call,,2,15,Medium,Use zk-KYC or self-sovereign identity
+User_Identification,Privacy-preserving identity solutions (ZK proofs),Proof verification in code,,2,15,Medium,Leverage Semaphore / zk-creds for anonymity
+Token_Classification,Not classified as investment contract (Howey Test),Legal opinion / disclaimer in docs,,4,15,High,Obtain third-party legal analysis
+Token_Classification,Genuine utility in protocol (not speculative),Tokenomics whitepaper / usage metrics,,4,15,High,Emphasize functional role (voting, fees, access)
+Token_Classification,No explicit promise of profits / yields,Marketing materials / disclaimers,,3,15,Medium,Avoid investment language in comms
+Token_Classification,Wide & fair distribution (no concentration),Token holder distribution data,,4,15,Medium,Publish holder stats; avoid founder dumps
+Jurisdictional_Exposure,Terms prohibit restricted jurisdictions,ToS / legal docs,,4,15,High,Explicitly list prohibited countries
+Jurisdictional_Exposure,Geo-blocking implemented for restricted areas,Frontend / API restriction logs,,4,15,High,Use IP geolocation + enforcement
+Jurisdictional_Exposure,Proactive regulator engagement,Sandbox participation / correspondence,,3,15,Medium,Join regulatory sandboxes (FCA, CFTC, etc.)
+Jurisdictional_Exposure,Appropriate legal structure (DAO / foundation),Entity formation docs,,4,15,High,Establish Cayman/Singapore foundation or DAO LLC
+Governance_Disclosure,Compliance officer / committee designated,Governance proposal or org chart,,3,15,Medium,Create dedicated compliance role in DAO
+Governance_Disclosure,Written AML/CFT & compliance program,Policy document on GitHub/IPFS,,4,15,High,Publish full program with FATF alignment
+Governance_Disclosure,Regular independent compliance audits,Audit reports (financial + regulatory),,3,15,Medium,Schedule annual third-party reviews
+Governance_Disclosure,Risk disclosures to users,User-facing warnings / docs,,3,15,Medium,Add prominent risk banners
+Governance_Disclosure,Terms of service enforced,Enforcement history or mechanism,,2,15,Medium,Implement report & action process
+Governance_Disclosure,Privacy policy published (GDPR/POPIA compliant),Privacy doc link,,2,15,Low,Publish & update regularly
+Governance_Disclosure,Smart contract audits completed (security),Audit reports from reputable firms,,3,15,Medium,Multiple audits + bug bounties
